@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html"><h1>Calculadora</h1></a>
+            <nav>
+                <a href=""><li class="active">Média</li></a>
+                <a href="../temperatura/"><li>Temperatura</li></a>
+            </nav>
+        </header>
+        <main>
+            <h2>Calculadora de Média</h2>
+            <p>média para aprovação: <input id="mediaApr" type="number" value="6"></p>
+            <p id="resultado"></p>
+            <div class="formContainer">
+                <div id="inputContainer">
+                    <input class="input" placeholder="1º valor" type="number">
+                    <input class="input" placeholder="2º valor" type="number">
+                    <input class="input" placeholder="3º valor" type="number">
+                    <input class="input" placeholder="4º valor" type="number">
+                </div>
+                <button class="addInput" onclick="addInput()">+</button>
+                <button onclick="calcularMedia()">Calcular</button>
+            </div>
+        </main>
+        <footer>
+            <span> feito com 💛 by <a class="link" target="_blank" href="https://linktr.ee/elmojr">elmojr</a></span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

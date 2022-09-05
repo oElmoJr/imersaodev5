@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html"><h1>Calculadora</h1></a>
+            <nav>
+                <a href="../media/"><li>Média</li></a>
+                <a href=""><li class="active">Temperatura</li></a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Calculadora de Temperatura</h2>
+    
+            <p id="resultado"></p>
+      
+            <form class="formContainer" onsubmit="converter(); return false">
+                <input required placeholder="digite a temperatura" id="valor" type="text" />
+                
+                <select id="valor1" type="text">
+                    <option value="Celcius">Celcius</option>
+                    <option value="Farenheit">Farenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                
+                <span>para</span>
+                
+                <select id="valor2" type="text">
+                    <option value="Farenheit">Farenheit</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                
+                <button type="submit" class="btn">Converter</button>
+            </form>
+        </main>
+        
+        <footer>
+            <span> feito com 💛 by <a class="link" target="_blank" href="https://linktr.ee/elmojr">elmojr</a></span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
