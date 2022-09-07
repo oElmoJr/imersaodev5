@@ -1,0 +1,22 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: #f194bb;
+    color: #0d0d0d;
+    
+    
+}
+
+.home-section h1 {
+    font-size: 100px;
+}
+
+.home-section .link {
+    background-color: #0d0d0d;
+    padding: 5px 10px;
+}

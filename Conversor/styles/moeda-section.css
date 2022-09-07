@@ -1,0 +1,29 @@
+.moeda-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0d0d0d;
+    color: #f194bb;
+
+    height: 100vh;
+}
+
+.moeda-section .box {
+    border: 2px solid #f194bb;
+    /* border-radius: 10px; */
+}
+
+.moeda-section input{
+    color: #fdfdfd;
+    border: 2px solid #f194bb;
+}
+
+.moeda-section select, .moeda-section button, .moeda-section option {
+    background-color: #f194bb;
+    color: #0d0d0d;
+}
+
+img {
+    height: 400px;
+}

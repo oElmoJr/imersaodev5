@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://www.pngmart.com/files/12/Love-Pink-Heart-Emoji-PNG-Photos.png" type="image/x-icon">
+    
+    <title>Conversores</title>
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home-section.css">
+    <link rel="stylesheet" href="styles/moeda-section.css">
+    <link rel="stylesheet" href="styles/distancia-section.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <h3><a class="titleLink" href="#home-section">Conversores</a></h3>
+        <nav>
+            <li><a href="#moeda-section">Moeda</a></li>
+            <li><a href="#distancia-section">Distancia</a></li>
+            <li><a href="https://oelmojr.github.io/imersaodev5/Calculadora/temperatura/" target="_blank">Temperatura</a></li>
+        </nav>
+    </header>
+
+        <main>
+            <section id="home-section" class="home-section">
+                    <h1>Conversores</h1>
+                    <a class="link" href="https://github.com/oElmoJr/imersaodev5" target="_blank">GitHub</a>
+            </section>
+
+            <section id="moeda-section" class="moeda-section">
+                <div class="container">
+                    <img src="assets/moeda icon.png" alt="">
+                    
+                    <form class="box" onsubmit="converterMoeda(); return false">
+                        <h2>Conversor de Moeda</h2>
+                        <p id="resultadoMoeda">...</p>
+
+                        <input  id="valorMoeda" required placeholder="digite o valor" type="text" min="0" />
+                        
+                        <select id="valor1Moeda" type="text">
+                            <option value="BRL">Real</option>
+                            <option value="USD">Dólar americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="KRW">Won sul-coreano</option>
+                            <option value="JPY">Iene japonês</option>
+                        </select>
+                        
+                        <span>para</span>
+                        
+                        <select id="valor2Moeda" type="text">
+                            <option  value="USD">Dólar americano</option>
+                            <option value="BRL">Real</option>
+                            <option value="EUR">Euro</option>
+                            <option value="KRW">Won sul-coreano</option>
+                            <option value="JPY">Iene japonês</option>
+                        </select>
+                        
+                        <button type="submit" class="btn" >Converter</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="distancia-section" class="distancia-section">
+                <div class="container">
+                    <form class="box" onsubmit="converterDistancia(); return false">
+                        <h2>Conversor de Distancia</h2>
+                        <p id="resultadoDistancia">...</p>
+
+                        <input  id="valorDistancia" required placeholder="digite o valor" type="text" min="0" />
+                        
+                        <select id="valor1Distancia" type="text">
+                            <option value="kl">Quilometro</option>
+                            <option value="al">Anos luz</option>
+                            <option value="m">Metros</option>
+                          </select>
+                        
+                        <span>para</span>
+                        
+                        <select id="valor2Distancia" type="text">
+                            <option value="al">Anos luz</option>
+                            <option value="kl">Quilometro</option>
+                            <option value="m">Metros</option>
+                          </select>
+                        
+                        <button type="submit" class="btn" >Converter</button>
+                    </form>
+
+                    <img src="assets/distancia icon.png" alt="">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <span> feito com 💗 by <a class="link" target="_blank" href="https://linktr.ee/elmojr">elmojr</a></span>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

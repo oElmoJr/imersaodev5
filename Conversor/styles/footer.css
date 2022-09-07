@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0d0d0d;
+    color: #fdfdfd;
+
+    height: 50px;
+}
+
+.link {
+    color: #f194bb;
+    font-weight: bold;
+}
