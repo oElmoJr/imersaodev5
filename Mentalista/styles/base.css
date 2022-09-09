@@ -1,0 +1,12 @@
+* {
+    color: var(--dark-color);
+    font-family: 'Ubuntu', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mentalista</title>
+
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mainContainer.css">
+    <link rel="stylesheet" href="styles/formContainer.css">
+    <link rel="stylesheet" href="styles/title.css">
+    <link rel="stylesheet" href="styles/dialogContainer.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+</head>
+<body>
+    <main>
+        <div class="mainContainer">
+            <div class="leftSide">
+                <h2 class="title">Mentalista</h2>
+                <div id="coracoes">❤❤❤</div>
+                <form class="formChute" onsubmit="chutar(); return false">
+                    <input id="numeroPlayer" type="number" placeholder="Escreva aqui o seu chute" min="0" max="10" required >
+                    <button id="btnChutar" type="submit">Chutar</button>
+                </form>
+            </div>
+            <div class="rightSide">
+                <div class="dialogContainer">
+                    <div class="dialog">
+                        <p id="dialog">Duvido você adivinhar de 0 a 10, qual número estou pensando. </p>
+                        <div class="denovo">
+                            <button onClick="window.location.reload();">Sim</button>
+                            <button onClick="openMaisUmaVez()"">Não</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="imageContainer">
+                    <img src="assets/characters/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>feito com ❤ by <a class="link" target="_blank" href="https://linktr.ee/elmojr">elmojr</a></span>
+        <span class="reload">experimente recarregar a pagina</span>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
